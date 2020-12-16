@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .clear:after{
+        	content:'';
+        	display: block;
+        	height:0;
+        	clear:both;
+        }
+        a {
+            text-decoration: none;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .header {
+            height: 100px;
+        }
+        .container {
+            width: 1260px;
+            margin: 0 auto;
+        }
+        .logo {
+            float: left;
+            margin-left: 30px;
+            margin-top: 15px;
+            width: 100px;
+            height: 100px;
+        }
+        .nav {
+            float: left;
+            margin-top: 42px;
+        }
+        .nav li{
+        	float: left;
+        	margin-left: 70px;
+        	font-size:18px;
+        	font-family:Microsoft YaHei;
+        	font-weight:400;
+        	text-align: center;
+        }
+        .nav li:hover{
+        	width: 74px;
+        	border-bottom: 2px solid red;
+        }
+        .form{
+        	float: right;
+            margin-top: 34px;
+            margin-right: 40px;
+        }
+        .search{
+        	float: left;
+        	width: 260px;
+        	padding: 12px 19px;
+        	border:1px solid red;
+        }
+        .submit{
+        	float: left;
+        	width:50px;
+        	height:42px;
+        	background:red;
+        	border: 1px solid red;
+        }
+        .img {
+            margin-top: 20px;
+            margin-bottom: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: red;
+        }
+        #con {
+            height: 100px;
+            width: 180px;
+            margin-left: 30px;
+            float: left;
+        }
+        img {
+            display: inline;
+            height: 100px;
+            width: 180px;
+        }
+        #imgs {
+            width: 950px;
+            height: 520px;
+            margin-left: 50px;
+        }
+        #news {
+            width: 1250px;
+            height: 30px;
+            margin: 0 auto;
+            border: 5px ridge yellow;
+            overflow: hidden;
+        }
+        .title {
+            margin-top: 5px;
+            width: 700px;
+        }
+        #middle {
+            height: 320px;
+            margin-top: 10px;
+        }
+        #score {
+            display: inline-block;
+            width: 420px;
+            height: 300px;
+            margin-left: 10px;
+            border: 2px dotted rgb(141, 5, 5);
+        }
+        button {
+            width: 80px;
+            height: 40px;
+            text-align: center;
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+        #btn1 {
+            background-color: rgb(117, 222, 230);
+        }
+        #btn2 {
+            background-color: coral;
+        }
+        #btn3 {
+            background-color: deeppink;
+        }
+        #score ul {
+            font-size: 16px;
+            font-family: Microsoft YaHei;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        #score ul li {
+            margin-top: 15px;
+        }
+        #tb {
+            float: right;
+            margin-right: 100px;
+        }
+        table {
+            background-color: rgba(216, 233, 62, 0.801);
+        }
+        tr {
+            height: 40px;
+        }
+        td {
+            padding-left: 5px;
+            width: 300px;
+        }
+        #bottom {
+            height:110px;
+            background-color: black;
+        }
+        .btmimg {
+            width: 50px;
+            height: 50px;
+            margin-left: 15px;
+        }
+        #pbo{
+            font-size: 12px;
+            font-family: "微软雅黑";
+        	display: inline-block;
+            color:rgba(255, 255, 255, 0.836);
+            margin-left: 380px;
+            margin-top: 50px;
+        }
+        #pbo a {
+            font-size: 12px;
+            font-family: "微软雅黑";
+            color:#FFF;
+        }
+        #his {
+            height: 300px;
+            width: 1200px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        #his button {
+            width: 300px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+		<div class="container clear">
+			<img src="images/d.jpg" alt="这是一张logo图片" class="logo"/>
+			<ul class="nav clear">					
+                <li id="a1">首页</li> 
+                <li id="a2">新闻</li>
+                <li id="a3">球队</li>
+                <li id="a4">赛事信息</li>
+                <li id="a5">球队荣誉</li>
+			</ul>					
+			<form class="form">				
+			    <input type="text" placeholder="请输入" class="search"/>
+			    <input type="button" value="搜索" class="submit"/>
+                <p id="p1"></p>
+            </form>
+		</div>
+    </div>
+    <div class="img">
+        <div id="con">
+            <img src="images/0.jpg" alt="">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/3.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+        </div>
+        <img src="images/4.jpg" alt="" id="imgs">
+    </div>
+    <div id="news">
+        <div class="title">
+            经研究决定，2020年12月5日起，广州恒大队长郑智出任广州恒大淘宝足球俱乐部总经理。 ​​​​
+        </div>
+    </div>
+    <div id="middle">
+        <div id="score">
+            <button id="btn1">亚冠</button>
+            <button id="btn2">中超联赛</button>
+            <button id="btn3">足协杯</button>
+            <ul id="ul1">
+                <li>小组赛第二轮 2020.11.22 水原三星 0:0 广州恒大淘宝</li>
+                <li>小组赛第三轮 2020.11.25 广州恒大淘宝 1:3 神户胜利船</li>
+                <li>小组赛第四轮 2020.11.28 神户胜利船 0:2 广州恒大淘宝</li>
+                <li>小组赛第五轮 2020.12.01 广州恒大淘宝 1:1 水原三星</li>
+            </ul>
+            <ul id="ul2">
+                <li>半决赛 2020.10.28 北京中赫国安 0:0 广州恒大淘宝</li>
+                <li>半决赛 2020.11.08 广州恒大淘宝 3:1 北京中赫国安</li>
+                <li>决赛 2020.11.08 江苏苏宁易购 0:0 广州恒大淘宝</li>
+                <li>决赛 2020.11.12 广州恒大淘宝 1:2 江苏苏宁易购</li>
+            </ul>
+            <ul id="ul3">
+                <li>第一轮 2020.09.18 广州恒大淘宝 2:0 河南建业</li>
+                <li>1/8决赛 2020.11.26 广州恒大淘宝 0:3 昆山FC</li>
+            </ul>
+        </div>
+        <div id="tb">
+            <h2>球队-团体荣誉</h2>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td><a href="https://baike.sogou.com/v16415.htm" target="blank">中国足球协会超级联赛</a>冠军</td>
+                    <td>7次 : 2011 - 2017</td>
+                </tr>
+                <tr>
+                    <td><a href="https://baike.sogou.com/v4702986.htm;jsessionid=2A3373D785BEF2B35B8EC3E883AFAE53" target="blank">亚洲足球俱乐部冠军联赛</a>冠军</td>
+                    <td>2次 : 2013、2015</td>
+                </tr>
+                <tr>
+                    <td><a href="https://baike.sogou.com/v65917825.htm" target="blank">中国足球协会超级杯</a>冠军</td>
+                    <td>4次 : 2012、2016、2017、2018</td>
+                </tr>
+                <tr>
+                    <td><a href="https://baike.sogou.com/v63199558.htm" target="blank">中国足球协会杯赛</a>冠军</td>
+                    <td>2次 : 2012、2016</td>
+                </tr>
+                <tr>
+                    <td><a href="https://baike.sogou.com/v175894.htm" target="blank">中国足球协会甲级联赛</a>冠军</td>
+                    <td>2次 : 2007、2010</td>
+                </tr>
+                <tr>
+                    <td><a href="https://baike.sogou.com/v14323.htm" target="blank">亚足联</a>最佳俱乐部奖</td>
+                    <td>2次 : 2013、2015</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="his">
+        <h2 id="h">球队介绍</h2>
+        <button id="btn0">你想知道的恒大都在这！！！</button>
+    </div>
+    <div id="bottom">
+        <img src="images/6.jpg" alt="" class="btmimg">
+        <img src="images/7.jpg" alt="" class="btmimg">
+        <div id="pbo">
+            <a href="" id="ab">版权声明 2020 刘漫 web作业 广州未赢够</a>
+        </div>
+	</div>
+</body>
+<script>
+    var search = document.getElementsByClassName("search");
+    var p1 = document.getElementById("p1");
+    var imglist = document.getElementsByTagName("img");
+    var imgs = document.getElementById("imgs");
+    var news = document.getElementById("news");
+    var title = document.getElementsByClassName("title");
+    var score = document.getElementById("score");
+    var btn = document.getElementsByTagName("button");
+    var ul1 = document.getElementById("ul1");
+    var ul2 = document.getElementById("ul2");
+    var ul3 = document.getElementById("ul3");
+    var a1 = document.getElementById("a1");
+    var a2 = document.getElementById("a2");
+    var a3 = document.getElementById("a3");
+    var a4 = document.getElementById("a4");
+    var a5 = document.getElementById("a5");
+    var ab = document.getElementById("ab");
+    var his = document.getElementById("his");
+    var btn0 = document.getElementById("btn0");
+    var btmimg = document.getElementsByClassName("btmimg");
+    search[0].onclick = function() {
+        p1.innerText = "请输入和广州队相关的信息";
+        p1.style.fontSize = "15px";
+        p1.style.color = "gray";
+    }
+    search[0].onblur = function() {
+        p1.innerText = "";
+    }
+    for( var i = 1; i < imglist.length-2; i++) {
+        imglist[i].onclick = function() {
+            for(var j = 1; j < imglist.length-2; j++) {
+                if(j != i) {
+                    imglist[j].style.border = 0;
+                }
+            }
+            this.style.border = "2px solid yellow";
+            var str = this.getAttribute("src");
+            imgs.setAttribute("src", str);
+            imgs.style.border = 0;
+        }
+    }
+    title[0].style.marginLeft = "0px";
+    var time = setInterval(function() {
+        var marginLeft = parseInt(title[0].style.marginLeft);
+        if(marginLeft == 1200) {
+            title[0].style.marginLeft = "0";
+            marginLeft = 0;
+        }
+        title[0].style.marginLeft = (++marginLeft) + "px";
+    }, 10);
+    var timerId = setInterval(function() {
+        var str = "0123456789abcdef";
+        var colorStr = "#";
+        for(var i=0; i<6; i++) {
+            var index = Math.random();
+            index1 = parseInt(index * str.length);
+            console.log(str[index1]);
+            var c=str[index1];
+            colorStr=colorStr+c;
+        }
+        news.style.borderColor = colorStr;
+    },1000)
+    window.onload = function() {
+        ul2.style.display = "none";
+        ul3.style.display = "none";
+    }
+    btn[0].onclick = function() {
+        score.appendChild(ul1);
+        score.appendChild(ul2);
+        score.appendChild(ul3);
+        score.removeChild(ul2);
+        score.removeChild(ul3);
+        image.style.marginTop = "0px"
+        score.appendChild(image);
+    }
+    btn[1].onclick = function() {
+        score.appendChild(ul1);
+        score.appendChild(ul2);
+        score.appendChild(ul3);
+        score.removeChild(ul1);
+        score.removeChild(ul3);
+        ul2.style.display = "block";
+        image.style.marginTop = "0px"
+        score.appendChild(image);
+    }
+    btn[2].onclick = function() {
+        score.appendChild(ul1);
+        score.appendChild(ul2);
+        score.appendChild(ul3);
+        score.removeChild(ul1);
+        score.removeChild(ul2);
+        ul3.style.display = "block";
+        image.style.marginTop = "71.5px"
+        score.appendChild(image);
+    }
+    var image = document.createElement("img");
+    image.style.width = "400px"
+    image.style.height = "100px";
+    image.style.marginLeft = "10px";
+    image.setAttribute("src", "images/5.jpg");
+    score.appendChild(image);
+    a1.onclick = function() {
+        window.history.go(0);
+    }
+    a2.onclick = function() {
+        window.location.hash = "#news";
+    }
+    a3.onclick = function() {
+        newWindow = window.open("https://baike.sogou.com/v75298465.htm?fromTitle=%E5%B9%BF%E5%B7%9E%E6%81%92%E5%A4%A7","球队百科","height = 600px, width = 600px, left = 400px, top = 200px");
+    }
+    a4.onclick = function() {
+        window.location.hash = "score";
+    }
+    a5.onclick = function() {
+        window.location.hash = "#tb";
+    }
+    ab.onmouseover = function() {
+        ab.style.color = "red";
+    }
+    ab.onmouseout =function() {
+        ab.style.color = "#FFF";
+    }
+    var flag = false;
+    btn0.onclick = function() {
+        his.style.backgroundColor = "coral";
+        if(flag == false) {
+            var pp = document.createElement("p");
+            var strs = "广州足球俱乐部（GuangZhou FC），简称广州队，原名广州恒大淘宝足球俱乐部，是中国广州的一个足球俱乐部，其前身广州足球队成立于1954年，是中国第一支市级专业足球队。截至2020年，广州足球俱乐部已八次夺得中超联赛冠军，其“七连冠”创下中国足球职业化以来的最佳记录；并获得四次中国足球超级杯冠军和两次中国足协杯冠军，两次亚冠联赛冠军。";
+            pp.style.height = "80px";
+            pp.style.fontSize = "20px";
+            pp.style.marginLeft = "10px";
+            var i = 0;
+            var timer = 0;
+            function typing () {
+                if (i <= strs.length) {
+                  pp.innerHTML = strs.slice(0, i++) + '_';
+                  timer = setTimeout(typing, 100);
+                }
+                else {
+                  pp.innerHTML = strs;
+                  clearTimeout(timer);
+                }
+            }
+            typing();
+            his.appendChild(pp);
+            var btn1 = document.createElement("button");
+            btn1.innerText = "再点一下，了解球员";
+            btn1.setAttribute("style", "width:300px");
+            btn1.setAttribute("style", "height:50px");
+            his.appendChild(btn1);
+            flag = true;
+            var j = 0;
+            btn1.onclick = function() {
+                if(j == 0) {
+                    var ppp = document.createElement("p");
+                    var strss = "队长郑智，2013年荣获亚洲足球先生；前锋：韦世豪、埃克森（2014年中超联赛最佳球员）、塔利斯卡等；中场：黄博文、保利尼奥、张修维等；后卫：张琳芃、李学鹏、梅方等；守门员：刘殿座等。其中本土球员韦世豪、黄博文、张琳芃、李学鹏以及归化球员埃克森等人同时也是国家队中的主力。";
+                    pp.style.height = "80px";
+                    ppp.style.fontSize = "20px";
+                    ppp.style.marginLeft = "10px";
+                    his.appendChild(ppp);
+                    j++;
+                    var l = 0;
+                    var timers = 0;
+                    function typings () {
+                        if (l <= strss.length) {
+                          ppp.innerHTML = strss.slice(0, l++) + '_';
+                          timers = setTimeout(typings, 100);
+                        }
+                        else {
+                          ppp.innerHTML = strss;
+                          clearTimeout(timers);
+                        }
+                    }
+                    typings();
+                }
+            }
+        }
+    }
+    btmimg[0].onmouseover = function() {
+        alert("请在微博搜索“广州恒大淘宝俱乐部”");
+    }
+    btmimg[1].onmouseover = function() {
+        alert("请在微信公众号搜索“广州队”");
+    }
+</script>
+</html>
